@@ -1,4 +1,4 @@
-class Avo::Resources::Post < Avo::BaseResource
+class Avo::Resources::Comment < Avo::BaseResource
   # self.includes = []
   # self.attachments = []
   # self.search = {
@@ -7,8 +7,7 @@ class Avo::Resources::Post < Avo::BaseResource
 
   def fields
     field :id, as: :id
-    field :title, as: :text
     field :content, as: :textarea
-    field :comments, as: :has_many
+    field :post, as: :belongs_to
   end
 end

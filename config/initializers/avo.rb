@@ -51,8 +51,8 @@ Avo.configure do |config|
   # config.model_resource_mapping = {}
   # config.default_view_type = :table
   # config.per_page = 24
-  # config.per_page_steps = [12, 24, 48, 72]
-  # config.via_per_page = 8
+  config.per_page_steps = [8, 12, 24, 48, 72]
+  config.via_per_page = 16
   # config.id_links_to_resource = false
   # config.pagination = -> do
   #   {
@@ -144,19 +144,19 @@ Avo.configure do |config|
   # end
 
   ## == Menus ==
-  # config.main_menu = -> {
+  config.main_menu = -> {
   #   section "Dashboards", icon: "avo/dashboards" do
   #     all_dashboards
   #   end
 
-  #   section "Resources", icon: "avo/resources" do
-  #     all_resources
-  #   end
+     section "Resources", icon: "avo/resources" do
+       all_resources
+     end
 
   #   section "Tools", icon: "avo/tools" do
   #     all_tools
   #   end
-  # }
+  }
   # config.profile_menu = -> {
   #   link "Profile", path: "/avo/profile", icon: "heroicons/outline/user-circle"
   # }
