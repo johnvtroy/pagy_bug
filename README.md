@@ -3,22 +3,18 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Setup:
 
-* Ruby version
+1. rails db:migrate
+2. rails db:seed
+3. rails s
 
-* System dependencies
+Steps To Reproduce:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. click on Posts
+2. click on My First Post
+3. change record per page on the Comments to 8
+2. click on page 3 of the comments
+2. open Comment
+3. click Go Back
+4. get error Pagy::OverflowError in Avo::AssociationsController#index expected :page in 1..2; got 3
